@@ -8,8 +8,8 @@ pipeline {
                 }
                  stage("TERRA") {
                      steps {
-                          terraform init
-                          terrafor plan
+                          sh 'terraform init'
+                          sh 'terrafor plan'
                      }
                 }
            }
