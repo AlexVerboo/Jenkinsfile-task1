@@ -6,6 +6,12 @@ pipeline {
                           echo 'Hello World'
                      }
                 }
+                 stage("TERRA") {
+                     steps {
+                          terraform init
+                          terrafor plan
+                     }
+                }
            }
       }
 
